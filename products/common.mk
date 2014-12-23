@@ -10,7 +10,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.google.clientidbase=android-google \
     ro.com.android.wifi-watchlist=GoogleGuest \
     ro.setupwizard.enterprise_mode=1 \
-    ro.com.android.dateformat=MM-dd-yyyy \
+    ro.com.android.dateformat=dd-MM-yyyy \
     ro.com.android.dataroaming=false
 
 # Launcher3 supported devices
@@ -24,6 +24,12 @@ endif
 
 # Common overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/terminus/overlay/common
+
+# Backuptool support
+PRODUCT_COPY_FILES += \
+    vendor/terminus/proprietary/common/system/addon.d/50-lethargy.sh:system/addon.d/50-lethargy.sh \
+    vendor/terminus/proprietary/common/system/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/terminus/proprietary/common/system/bin/backuptool.sh:system/bin/backuptool.sh
 
 # Bootanimation
 PRODUCT_BOOTANIMATION := vendor/terminus/proprietary/common/system/media/bootanimation.zip
