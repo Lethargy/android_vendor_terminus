@@ -1,6 +1,6 @@
 #!/sbin/sh
 # 
-# /system/addon.d/50-simpleaosp.sh
+# /system/addon.d/50-lethargy.sh
 # During a ROM flash, this script backs up /system/etc/hosts,
 # /system is formatted and reinstalled, then the file is restored.
 #
