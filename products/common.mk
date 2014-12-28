@@ -31,7 +31,7 @@ PRODUCT_COPY_FILES += \
     vendor/terminus/proprietary/common/system/bin/backuptool.functions:system/bin/backuptool.functions \
     vendor/terminus/proprietary/common/system/bin/backuptool.sh:system/bin/backuptool.sh
 
-# Bootanimation
+# Lollipop factory image bootanimation
 PRODUCT_BOOTANIMATION := vendor/terminus/proprietary/common/system/media/bootanimation.zip
 
 # Enable SIP+VoIP on all targets
@@ -49,7 +49,14 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/terminus/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
-# stock ui sounds
+# Personal ringtone/notification sound
+PRODUCT_COPY_FILES += \
+    vendor/terminus/proprietary/common/system/media/audio/alarms/Endeavours.ogg:system/media/audio/alarms/Endeavours.ogg \
+    vendor/terminus/proprietary/common/system/media/audio/ringtones/Endeavours.ogg:system/media/audio/ringtones/Endeavours.ogg \
+    vendor/terminus/proprietary/common/system/media/audio/notifications/Now.ogg:system/media/audio/notifications/Now.ogg
+
+
+# KK factory image ui sounds
 PRODUCT_COPY_FILES += \
     vendor/terminus/proprietary/common/system/media/audio/ui/audio_end.ogg:system/media/audio/ui/audio_end.ogg \
     vendor/terminus/proprietary/common/system/media/audio/ui/audio_initiate.ogg:system/media/audio/ui/audio_initiate.ogg \
