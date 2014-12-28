@@ -1,6 +1,6 @@
 # Generic product
-PRODUCT_NAME := lethargy
-PRODUCT_BRAND := lethargy
+PRODUCT_NAME := terminus
+PRODUCT_BRAND := terminus
 PRODUCT_DEVICE := generic
 
 PRODUCT_PROPERTY_OVERRIDES += \
